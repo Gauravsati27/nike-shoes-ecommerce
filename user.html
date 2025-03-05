@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - Nike</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="user.css">
+</head>
+<body>
+    <!-- header section starts  -->
+    <header>
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <a href="inde.html" class="logo animate-logo"><b>Nike</b></a>
+        <nav class="navbar">
+            <div class="nav-links">
+                <a href="inde.html#home" class="nav-item">home</a>
+                <a href="inde.html#products" class="nav-item">products</a>
+                <a href="inde.html#featured" class="nav-item">featured</a>
+                <a href="inde.html#review" class="nav-item">review</a>
+            </div>
+        </nav>
+        <div class="icons">
+            <a href="#" class="fas fa-heart animate-icon"></a>
+            <a href="#" class="fas fa-shopping-cart animate-icon"></a>
+            <a href="#" class="fas fa-user animate-icon active"></a>
+        </div>
+    </header>
+    <!-- header section ends -->
+
+    <!-- user section starts -->
+    <section class="user-section">
+        <div class="container">
+            <div class="user-tabs">
+                <button class="tab-btn active" data-tab="login" style="color: aliceblue;">Login</button>
+                <button class="tab-btn" data-tab="register" style="color: aliceblue;">Register</button>
+            </div>
+
+            <!-- Login Form -->
+            <div class="form-container login-form active">
+                <form action="#" class="user-form">
+                    <h3>Login to Your Account</h3>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email Address" required>
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" placeholder="Password" required>
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="form-footer">
+                        <label>
+                            <input type="checkbox"> Remember me
+                        </label>
+                        <a href="#" class="forgot-password">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                    <div class="social-login">
+                        <p>Or login with</p>
+                        <div class="social-icons">
+                            <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="google"><i class="fab fa-google"></i></a>
+                            <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Register Form -->
+            <div class="form-container register-form">
+                <form action="#" class="user-form">
+                    <h3>Create New Account</h3>
+                    <div class="form-group">
+                        <input type="text" placeholder="Full Name" required>
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email Address" required>
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" placeholder="Password" required>
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" placeholder="Confirm Password" required>
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="form-footer">
+                        <label>
+                            <input type="checkbox" required> I agree to the Terms & Conditions
+                        </label>
+                    </div>
+                    <button type="submit" class="btn">Register</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- user section ends -->
+
+    <script src="script.js"></script>
+    <script src="user.js"></script>
+</body>
+</html> 
